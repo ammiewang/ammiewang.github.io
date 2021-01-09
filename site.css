@@ -1,0 +1,83 @@
+h1 {
+  font-family: arial;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 2px 2px black;
+  color: pink;
+  font-size: 40px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  width: 80%;
+}
+
+/* ul {
+  margin: auto;
+  padding: 0;
+} */
+
+body, html {
+  height: 100%;
+}
+
+.nav {
+  padding-top: 20px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.nav a {
+  font-family: arial;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  margin: auto;
+  margin: 5px;
+}
+
+.nav a:hover {
+ color: pink;
+}
+
+.table {
+  position: relative;
+}
+
+.cell {
+  position: absolute;
+  top: 30%;
+  width: 100%
+}
+
+.pcell {
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  height: 100%;
+}
+
+.column {
+  flex: 50%;
+  object-fit: contain;
+}
+
+.greenGrid {
+  background-image: url("grid.png");
+}
+
+.circle {
+  width: 5px;
+  height: 5px;
+  background: pink;
+  border-radius: 50%;
+  display: inline-block;
+  margin: auto;
+  margin: 5px;
+}
