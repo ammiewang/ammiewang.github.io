@@ -1,66 +1,99 @@
+body, html {
+  height: 100%;
+  /* color: white;
+  text-shadow: 2px 2px black; */
+}
+
 h1 {
   font-family: arial;
   font-weight: bold;
   font-style: italic;
   text-shadow: 2px 2px black;
   color: pink;
-  font-size: 40px;
+  font-size: 72px;
+  /* font-size: 38px; */
   text-align: center;
+  margin-bottom: 20px;
 }
 
-p {
+/*p {
   text-align: center;
   width: 80%;
 }
 
-/* ul {
+ul {
   margin: auto;
   padding: 0;
 } */
 
-body, html {
-  height: 100%;
-}
-
-.nav {
+nav {
   padding-top: 20px;
   display: inline-block;
   width: 100%;
   text-align: center;
 }
 
-.nav a {
+nav a {
   font-family: arial;
   font-weight: bold;
   text-align: center;
   color: black;
+  /* color: white; */
   text-decoration: none;
   display: inline-block;
   margin: auto;
   margin: 5px;
 }
 
-.nav a:hover {
+nav a:hover {
  color: pink;
 }
 
+/* img {
+  object-fit: contain;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+} */
+
 .table {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.cont {
   position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .cell {
-  position: absolute;
-  top: 30%;
-  width: 100%
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 80%;
+  background: #5bca9a;
+  /* background: #ffdee3; */
+  border-color: white;
+  border-style: solid;
+  padding-bottom: 30px;
+  overflow: auto;
+  /* box-shadow: 10px 10px white; */
 }
 
 .pcell {
+  text-align: center;
+  width: 80%;
   margin: auto;
 }
 
 .row {
   display: flex;
-  height: 100%;
+  height: 10%;
 }
 
 .column {
@@ -72,6 +105,10 @@ body, html {
   background-image: url("grid.png");
 }
 
+.firstPic {
+  background-image: url("me.jpeg");
+}
+
 .circle {
   width: 5px;
   height: 5px;
@@ -80,4 +117,62 @@ body, html {
   display: inline-block;
   margin: auto;
   margin: 5px;
+}
+
+.frameBox {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.circleFrame {
+  width: 200px;
+  height: 200px;
+  /* background: pink; */
+  border-radius: 50%;
+  display: inline-block;
+  margin: auto;
+  margin: 25px;
+}
+
+.about {
+  width: 80%;
+  padding-top: 30px;
+  margin: auto;
+}
+
+.newParagraph {
+  padding-top: 10px;
+}
+
+#home {
+  background: #5bca9a;
+  /* background-image: url('grid.png'); */
+  margin: 0;
+}
+
+.grid {
+  position: absolute;
+  z-index: -1;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+  width: 100%;
+  height: 100%;
+}
+
+.grid > div {
+  /* height: 100px; */
+  /* width: 10%; */
+  border-style: solid;
+  border-color: white;
+  border-left-color: transparent;
+  border-top-color: transparent;
+}
+
+.grid > div.firstInRow {
+  border-left-color: white;
+}
+
+.grid > div.firstRow {
+  border-top-color: white;
 }
