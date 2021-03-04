@@ -57,10 +57,11 @@ nav a:hover {
 } */
 
 .table {
-  position: absolute;
-  z-index: 10;
+  /* position: absolute; */
+  /* z-index: 10; */
   display: flex;
   flex-direction: column;
+  text-align: center;
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -75,6 +76,8 @@ nav a:hover {
 .cell {
   margin-top: 50px;
   margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
   width: 80%;
   background: #5bca9a;
   /* background: #ffdee3; */
@@ -147,6 +150,8 @@ nav a:hover {
 
 #home {
   background: #5bca9a;
+  /* background: pink; */
+  text-align: center;
   /* background-image: url('grid.png'); */
   margin: 0;
 }
@@ -175,4 +180,8 @@ nav a:hover {
 
 .grid > div.firstRow {
   border-top-color: white;
+}
+
+.grid > div.withText {
+  border-color: transparent;
 }
