@@ -2,11 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ammie Wang</title>
     <link rel="stylesheet" href="site.css">
     <script src='site.js'></script>
   </head>
   <body id='home'>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="/">HOME</a>
+      <a href="/about">ABOUT</a>
+      <a href="/projects">PROJECTS</a>
+      <a href="https://github.com/ammiewang">GITHUB</a>
+    </div>
+    <span id='sidenav-icon' onclick="openNav()"><img src='sidebar.png'></span>
     <div class='cont'>
       <!-- <nav>
         <button><a href='/' tabindex='1'>HOME</a></button>
@@ -17,6 +26,7 @@
         <div class="circle"></div>
         <button class='last'><a href='https://github.com/ammiewang' tabindex='4'>GITHUB</a></button>
       </nav> -->
+      <div id='sidebar'></div>
       <div class="table">
         <div class='typewriter'>
           <h1>HI! I'M AMMIE WANG.</h1>

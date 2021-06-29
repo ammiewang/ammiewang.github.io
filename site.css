@@ -3,19 +3,14 @@ body, html {
   height: 100%;
 }
 
-@media only screen and (min-width: 769px) {
-  #home {
-    background: url('water.jpg');
-    background-size: 100% auto;
-    width: 100%;
-    height: 100%;
-  }
+@media only screen and (min-width: 900px) {
+  /* adapted slightly from https://css-tricks.com/snippets/css/typewriter-effect/ */
   .typewriter h1 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid transparent; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .1em; /* Adjust as needed */
+    overflow: hidden;
+    border-right: .15em solid transparent;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .1em;
     animation:
       typing 3.5s steps(40, end),
       blink-caret .75s step-end 10;
@@ -34,7 +29,17 @@ body, html {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-aspect-ratio:5/4) {
+  #home {
+    /* image from https://unsplash.com/photos/K0U0eSAjFGU */
+    background: url('water.jpg');
+    background-size: 100% auto;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-aspect-ratio:5/4) {
   #home {
     background: url('water2.jpg');
     background-size: cover;
@@ -42,6 +47,93 @@ body, html {
     height: 100%;
     width: 100%;
     overflow: hidden;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #mySidenav, #sidenav-icon {
+    display: none;
+  }
+
+  nav {
+    z-index: 10;
+    margin-top: 20px;
+    background: rgba(221,198,180, 0.6);
+  }
+
+  nav .circle {
+    background: #5b7769;
+  }
+
+  nav button {
+    background: none;
+    border: none;
+    padding: 10px;
+  }
+
+  nav a {
+    font-family: arial;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+    background: none;
+  }
+
+  nav a:hover {
+   color: #5b7769;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  nav {
+    display: none;
+  }
+  /* The side navigation menu */
+  /* code for sidebar from https://www.w3schools.com/howto/howto_js_sidenav.asp */
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ddc6b4;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+  }
+
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: white;
+  }
+
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
   }
 }
 
@@ -55,6 +147,7 @@ h1 {
   /* font-size: 38px; */
   text-align: center;
   margin-bottom: 20px;
+  margin-top: 0px;
 }
 
 .desc span {
@@ -71,36 +164,7 @@ h1 {
   text-align: center;
 }
 
-nav {
-  z-index: 10;
-  margin-top: 20px;
-  background: rgba(221,198,180, 0.6);
-}
 
-nav .circle {
-  background: #5b7769;
-}
-
-nav button {
-  background: none;
-  border: none;
-  padding: 10px;
-}
-
-nav a {
-  font-family: arial;
-  font-weight: bold;
-  text-align: center;
-  color: white;
-  text-decoration: none;
-  display: inline-block;
-  margin: 5px;
-  background: none;
-}
-
-nav a:hover {
- color: #5b7769;
-}
 
 .table {
   /* padding-top: 20%; */
@@ -110,6 +174,7 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   height: 100%;
+  margin: 20px;
 }
 
 .cont {
@@ -191,7 +256,7 @@ nav a:hover {
 }
 
 #home {
-  text-align: center;
+  /* text-align: center; */
   margin: 0;
 }
 
