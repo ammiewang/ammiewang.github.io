@@ -3,6 +3,15 @@ body, html {
   height: 100%;
 }
 
+body.page {
+  margin: 0;
+  /* background: #a7b5ae; */
+  background: #818f88;
+  /* color: #302d25; */
+  /* color: white; */
+  /* background: #739c83; */
+}
+
 @media only screen and (min-width: 900px) {
   /* adapted slightly from https://css-tricks.com/snippets/css/typewriter-effect/ */
   .typewriter h1 {
@@ -61,6 +70,15 @@ body, html {
     background: rgba(221,198,180, 0.6);
   }
 
+  nav.top {
+    margin: 0;
+    text-align: center;
+    background: rgba(221,198,180);
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+
   nav .circle {
     background: #5b7769;
   }
@@ -85,6 +103,15 @@ body, html {
   nav a:hover {
    color: #5b7769;
   }
+}
+
+.prof button {
+  padding: 10px;
+  background: rgba(221,198,180);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 10px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -150,6 +177,10 @@ h1 {
   margin-top: 0px;
 }
 
+#about {
+  margin-top: 70px;
+}
+
 .desc span {
   font-family: arial;
   /* font-weight: bold; */
@@ -163,8 +194,6 @@ h1 {
   width: 100%;
   text-align: center;
 }
-
-
 
 .table {
   /* padding-top: 20%; */
@@ -201,18 +230,14 @@ h1 {
   margin: auto;
 }
 
-.row {
-  display: flex;
-  height: 10%;
-}
-
-.column {
-  flex: 50%;
-  object-fit: contain;
-}
-
-.greenGrid {
-  background-image: url("grid.png");
+.circleFrame {
+  width: 200px;
+  height: 200px;
+  /* background: pink; */
+  border-radius: 50%;
+  display: inline-block;
+  margin: auto;
+  margin: 25px;
 }
 
 .firstPic {
@@ -235,16 +260,6 @@ h1 {
   text-align: center;
 }
 
-.circleFrame {
-  width: 200px;
-  height: 200px;
-  /* background: pink; */
-  border-radius: 50%;
-  display: inline-block;
-  margin: auto;
-  margin: 25px;
-}
-
 .about {
   width: 80%;
   padding-top: 30px;
@@ -260,52 +275,6 @@ h1 {
   margin: 0;
 }
 
-.grid {
-  position: absolute;
-  z-index: -1;
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
-  width: 100%;
-  height: 100%;
-}
-
-.grid > div {
-  /* height: 100px; */
-  /* width: 10%; */
-  border-style: solid;
-  border-color: white;
-  border-left-color: transparent;
-  border-top-color: transparent;
-}
-
-.grid > div.firstInRow {
-  border-left-color: white;
-}
-
-.grid > div.firstRow {
-  border-top-color: white;
-}
-
-.grid > div.withText {
-  border-color: transparent;
-}
-
-.tri {
-  content: "";
-  width: 0px;
-  height: 0px;
-  /* position: absolute; */
-  border-left: 12px solid transparent;
-  border-right: 24px solid #fff;
-  border-top: 12px solid #fff;
-  border-bottom: 20px solid transparent;
-  left: 32px;
-  bottom: -24px;
-}
-
 .box {
   height: 100%;
-}
-@media only screen and (min-width: 769px) {
-
 }
