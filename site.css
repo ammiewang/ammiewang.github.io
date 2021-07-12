@@ -5,11 +5,38 @@ body, html {
 
 body.page {
   margin: 0;
-  /* background: #a7b5ae; */
   background: #818f88;
+  /* background: #acbfb6; */
   /* color: #302d25; */
   /* color: white; */
   /* background: #739c83; */
+}
+
+/* body.project {
+  background: #8f8881;
+  margin: 0;
+} */
+
+.project-display {
+  display: flex;
+  flex-direction: row;
+}
+
+a.app-link {
+  text-decoration: none;
+}
+
+a.app-link:hover {
+  color: #5b7769;
+}
+
+img {
+  height: 0%;
+}
+
+#project {
+  margin-top: 70px;
+  /* color: #8cb8a2; */
 }
 
 @media only screen and (min-width: 900px) {
@@ -91,6 +118,7 @@ body.page {
 
   nav a {
     font-family: arial;
+    font-size: 16px;
     font-weight: bold;
     text-align: center;
     color: white;
@@ -233,7 +261,9 @@ h1 {
 .circleFrame {
   width: 200px;
   height: 200px;
-  /* background: pink; */
+  /* background: #ddc6b4; */
+  background: #24403e;
+  /* border: 1px solid black; */
   border-radius: 50%;
   display: inline-block;
   margin: auto;
@@ -241,7 +271,8 @@ h1 {
 }
 
 .firstPic {
-  background-image: url("me.jpeg");
+  background-image: url("me2.png");
+  /* background-image: url('code.png') */
 }
 
 .circle {
@@ -262,7 +293,7 @@ h1 {
 
 .about {
   width: 80%;
-  padding-top: 30px;
+  /* padding-top: 20px; */
   margin: auto;
 }
 
@@ -278,3 +309,14 @@ h1 {
 .box {
   height: 100%;
 }
+
+.about-section {
+  /* padding: 25px; */
+  color: #33261c;
+  /* font-family: 'arial'; */
+}
+
+/* .gist {
+  background-color: #ddc6b4;
+  color: #34423b;
+} */
