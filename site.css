@@ -30,9 +30,9 @@ a.app-link:hover {
   color: #5b7769;
 }
 
-img {
+/* img {
   height: 0%;
-}
+} */
 
 #project {
   margin-top: 70px;
@@ -287,7 +287,7 @@ h1 {
 
 .frameBox {
   display: inline-block;
-  width: 100%;
+  /* width: 100%; */
   text-align: center;
 }
 
@@ -295,6 +295,13 @@ h1 {
   width: 80%;
   /* padding-top: 20px; */
   margin: auto;
+}
+
+.about-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .newParagraph {
@@ -316,7 +323,9 @@ h1 {
   /* font-family: 'arial'; */
 }
 
-/* .gist {
-  background-color: #ddc6b4;
-  color: #34423b;
-} */
+.gist {
+  /* min-width: 50%; */
+  max-width: 700px;
+  /* background-color: #ddc6b4;
+  color: #34423b; */
+}
