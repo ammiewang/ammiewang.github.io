@@ -7,34 +7,64 @@
     <link rel="stylesheet" href="site.css">
     <script src='site.js'></script>
   </head>
-  <body id='home'>
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="/">HOME</a>
-      <a href="/about">ABOUT</a>
-      <a href="/projects">PROJECTS</a>
-      <a href="https://github.com/ammiewang">GITHUB</a>
-    </div>
-    <span id='sidenav-icon' onclick="openNav()"><img src='sidebar.png'></span>
-    <div class='cont'>
-      <div id='sidebar'></div>
-      <div class="table">
-        <div class='typewriter'>
-          <h1>HI! I'M AMMIE WANG.</h1>
-          <div class='desc'>
-            <span>CS STUDENT</span>
-            <div class="circle"></div>
-            <span>FULL STACK DEVELOPER</span>
+  <body>
+    <div id='home'>
+      <nav class='sticky'>
+        <button><a href='#home' tabindex='1'>HOME</a></button>
+        <div class="circle"></div>
+        <button><a href='#about' tabindex='2'>ABOUT</a></button>
+        <div class="circle"></div>
+        <button><a href='/projects' tabindex='3'>PROJECTS</a></button>
+        <div class="circle"></div>
+        <button class='last'><a href='https://github.com/ammiewang' tabindex='4'>GITHUB</a></button>
+      </nav>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="/projects">PROJECTS</a>
+        <a href="https://github.com/ammiewang">GITHUB</a>
+      </div>
+      <span id='sidenav-icon' onclick="openNav()"><img src='sidebar.png'></span>
+      <div class='cont'>
+        <div id='sidebar'></div>
+        <div class="table">
+          <div class='typewriter'>
+            <h1>HI! I'M AMMIE WANG.</h1>
+            <div class='desc'>
+              <span>CS STUDENT</span>
+              <div class="circle"></div>
+              <span>FULL STACK DEVELOPER</span>
+            </div>
           </div>
-          <nav>
-            <button><a href='/' tabindex='1'>HOME</a></button>
-            <div class="circle"></div>
-            <button><a href='/about' tabindex='2'>ABOUT</a></button>
-            <div class="circle"></div>
-            <button><a href='/projects' tabindex='3'>PROJECTS</a></button>
-            <div class="circle"></div>
-            <button class='last'><a href='https://github.com/ammiewang' tabindex='4'>GITHUB</a></button>
-          </nav>
+        </div>
+      </div>
+    </div>
+    <div id='about'>
+      <div class='about-flex'>
+        <div class='flex-c1'>
+          <img src='me.png' class='me'/>
+        </div>
+        <div class='about-item bio'>
+          <h1>ABOUT ME</h1>
+          <p><b>Hi, I'm Ammie Wang!</b> I'm a Computer Science major and Data Analysis minor at Wesleyan University.
+          Throughout my college career, I have worked as a software engineer intern, a computer science research assistant, and a programming tutor.
+          I am particularly interested in full-stack development.</p>
+          <div class="about-section prof">
+            <button>Python</button>
+            <button>Java</button>
+            <button>JavaScript</button>
+            <button>Standard ML</button>
+            <button>React</button>
+            <button>Django</button>
+            <button>R</button>
+            <button>Node.js</button>
+            <button>TypeScript</button>
+            <button>GraphQL</button>
+          </div>
+        </div>
+        <div class='flex-c2'>
+          <img src='me.png' class='me'/>
         </div>
       </div>
     </div>
