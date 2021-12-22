@@ -217,6 +217,7 @@ a.app-link:hover {
     display: flex;
     flex-direction: column;
     align-self: flex-end;
+    justify-content: flex-end;
     object-fit: contain;
     max-width: 100%;
   }
