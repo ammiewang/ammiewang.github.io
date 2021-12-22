@@ -366,6 +366,7 @@ h1 {
 
 .me {
   max-height: 757px;
+  object-fit: contain;
 }
 
 .table {
