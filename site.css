@@ -224,6 +224,7 @@ a.app-link:hover {
 
   .about-flex {
     flex-wrap: wrap;
+    align-items: flex-end;
     /* padding-top: 100px; */
   }
 }
