@@ -209,6 +209,10 @@ a.app-link:hover {
 }
 
 @media only screen and (max-width: 1499px) {
+  #about {
+    padding-top: 50px;
+  }
+
   .flex-c1 {
     display: none;
   }
