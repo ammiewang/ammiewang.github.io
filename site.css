@@ -214,12 +214,15 @@ a.app-link:hover {
   }
 
   .flex-c2 {
-    display: flex;
+    /* overflow: auto; */
+    /* object-fit: contain; */
+    /* display: flex;
     flex-direction: column;
     align-self: flex-end;
     justify-content: flex-end;
-    object-fit: contain;
-    max-width: 100%;
+    object-fit: contain; */
+    max-width: 80%;
+    margin: 0 auto 0 auto;
     height: fit-content;
   }
 
@@ -261,7 +264,7 @@ h1 {
 
 #about {
   /* margin-top: 70px; */
-  min-height: 100vh;
+  /* min-height: 100vh; */
   color: #3a5e54;
   /* color: #818f88; */
   /* color: ; */
@@ -269,16 +272,13 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  width: 100%;
+  min-height: 100vh;
   /* text-align: center; */
   /* justify-content: center; */
   /* align-items: center; */
   /* align-items: bottom; */
   /* object-fit: contain; */
-}
-
-#about h1 {
-  /* padding-top: 5%;
-  padding-left: 10%; */
 }
 
 
@@ -368,8 +368,9 @@ h1 {
 }
 
 .me {
-  max-height: 757px;
+  /* max-height: 757px; */
   object-fit: contain;
+  max-width: 100%;
 }
 
 .table {
