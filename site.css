@@ -223,13 +223,17 @@ a.app-link:hover {
     object-fit: contain; */
     max-width: 80%;
     margin: 0 auto 0 auto;
-    height: fit-content;
+    line-height: 0;
   }
 
   .about-flex {
     flex-wrap: wrap;
     align-items: flex-end;
     /* padding-top: 100px; */
+  }
+
+  .me {
+    max-width: 100%;
   }
 }
 
@@ -370,7 +374,6 @@ h1 {
 .me {
   /* max-height: 757px; */
   object-fit: contain;
-  max-width: 100%;
 }
 
 .table {
