@@ -221,7 +221,7 @@ a.app-link:hover {
     align-self: flex-end;
     justify-content: flex-end;
     object-fit: contain; */
-    max-width: 80%;
+    max-width: min(80%, 600px);
     margin: 0 auto 0 auto;
     line-height: 0;
   }
