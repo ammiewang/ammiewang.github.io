@@ -342,26 +342,6 @@ h1 {
   color: #bacfc4;
 }
 
-.card1 {
-  /* background: #c1dbd1 */
-  background: #bacfc4;
-  /* border-right: none; */
-}
-
-.card2 {
-  background: #84b39a;
-  /* border-right: none; */
-}
-
-.card3 {
-  background: #4a8a68;
-  /* border-right: none; */
-}
-
-.card4 {
-  color: white;
-  background: #226642;
-}
 
 .desc span {
   font-family: arial;
@@ -512,38 +492,29 @@ h1 {
   /* justify-content: space-around; */
   /* justify-content: center; */
   flex-wrap: wrap;
-  max-width: 80%;
-  margin: 0 auto 0 auto;
 }
 
-.card {
-  min-width: 300px;
-  min-height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #ddc6b4;
-  flex: 1;
-  /* background: white;
-  background: #ebddd3;
-  padding: 30px;
-  border-radius: 20px; */
-  /* border: 2px solid #818f88; */
-  /* #b8a08f */
-  /* -webkit-box-shadow: 0 0 10px #818f88;
-        box-shadow: 0 0 10px #818f88; */
-
+.project-content {
+  width: 80%;
+  /* height: 100%; */
+  margin: 0 auto 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /* align-items: center; */
 }
 
 #projects {
   background: #3a5e5a;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #projects h1 {
-  margin: 0;
-  padding: 50px 0px 50px 50px;
+  font-size: min(72px, 15vw);
+  /* margin: 0; */
+  /* padding: 50px 0px 50px 50px; */
   color: #ddc6b4;
 }
 
@@ -551,9 +522,6 @@ h1 {
   /* font-family: arial; */
 }
 
-.project-flex .card:nth-child(2n) {
-  background: #a5b5ad;
-}
 #contact {
   background: #a5b5ad;
   min-height: 50vh;
@@ -577,4 +545,57 @@ h1 {
 
 .contact-flex a {
   margin: 30px;
+}
+
+.card {
+  min-width: 300px;
+  min-height: 400px;
+  flex: 1;
+}
+
+.project-flex :nth-child(even) .flip-front,
+.project-flex :nth-child(even) .flip-back {
+  background: #a5b5ad;
+}
+
+/* This container is needed to position the front and back side */
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+/* Style the back side */
+.flip-back {
+  text-align: left;
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-front, .flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: #ddc6b4;
+  border: white 1px solid;
+}
+
+.flip-back ul {
+  width: 80%;
+  margin: 0 auto 0 auto;
 }
