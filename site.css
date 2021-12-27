@@ -150,6 +150,14 @@ a.app-link:hover {
     color: white;
    /* color: #5b7769; */
   }
+
+  .flip:hover .flip-inner {
+    transform: rotateY(180deg);
+  }
+  /* Style the back side */
+  .flip-back {
+    transform: rotateY(180deg);
+  }
 }
 
 .prof button {
@@ -568,11 +576,16 @@ h1 {
   transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip:hover .flip-inner {
+
+/* .flip:hover .flip-inner {
   transform: rotateY(180deg);
 }
-/* Style the back side */
+
+.flip-back {
+  text-align: left;
+  transform: rotateY(180deg);
+} */
+
 .flip-back {
   text-align: left;
   transform: rotateY(180deg);
